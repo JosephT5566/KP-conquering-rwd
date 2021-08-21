@@ -15,7 +15,6 @@ const useStyle = makeStyles((theme) => ({
 		'& a': {
 			fontSize: '2em',
 			fontFamily: theme.typography.fontFamily,
-			textDecoration: 'none',
 			color: theme.palette.common.white,
 		},
 	},

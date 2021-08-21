@@ -2,13 +2,13 @@ import { Palette } from '@material-ui/core/styles/createPalette';
 
 export const palette = {
 	primary: {
-		main: '#2e932e',
+		main: '#639763',
 	},
 	secondary: {
 		main: '#ffbb2f',
 	},
 	background: {
-		default: '#141b2d',
+		default: '#f1ece8',
 		paper: '#1d2538',
 	},
 	error: {

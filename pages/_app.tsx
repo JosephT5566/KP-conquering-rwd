@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '../styles/theme';
 import Header from '../src/views/layout/Header';
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
