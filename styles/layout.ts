@@ -1,5 +1,5 @@
 export interface ILayout {
-	navbar: {
+	header: {
 		height: string;
 	};
 	footer: {
@@ -8,7 +8,7 @@ export interface ILayout {
 }
 
 export const layout = {
-	navbar: {
+	header: {
 		height: '80px',
 	},
 	footer: {
