@@ -7,6 +7,7 @@ const useStyle = makeStyles((theme) => ({
 		width: '100%',
 		top: 0,
 		left: 0,
+		zIndex: theme.zIndex.appBar,
 		padding: '0.5em',
 		position: 'fixed',
 		display: 'grid',
