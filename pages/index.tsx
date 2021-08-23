@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Container from '../src/components/based/Container';
 import { DailyChallengeWrapper, ChallengeInfo } from '../src/components/shared/Wrapper';
 import Challenge1 from '../src/views/payment/Challenge1';
+import Challenge2 from '../src/views/payment/Challenge2';
 
 const Home: NextPage = () => {
 	return (
@@ -16,6 +17,9 @@ const Home: NextPage = () => {
 			<DailyChallengeWrapper info={challenge1}>
 				<Challenge1 />
 			</DailyChallengeWrapper>
+			<DailyChallengeWrapper info={challenge2}>
+				<Challenge2 />
+			</DailyChallengeWrapper>
 		</Container>
 	);
 };
@@ -25,6 +29,12 @@ const challenge1 = new ChallengeInfo(
 	'Challenge 1',
 	'Using percentages & avoiding heights',
 	'A look at why fixed unit sizes are a bad idea when it comes to creating layouts, and the times you might want to use them.'
+);
+const challenge2 = new ChallengeInfo(
+	'challenge2',
+	'Challenge 2',
+	'Enter max-width',
+	''
 );
 
 export default Home;
