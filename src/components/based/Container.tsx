@@ -10,7 +10,11 @@ const useStyle = makeStyles((theme) => ({
 		minHeight: '100vh',
 		paddingTop: theme.layout.header.height,
 		paddingInline: '10em',
+		paddingBottom: '1em',
 		backgroundColor: theme.palette.background.default,
+		display: 'flex',
+		flexDirection: 'column',
+		gap: '1rem',
 		[theme.breakpoints.down('md')]: {
 			paddingInline: '5em',
 		},

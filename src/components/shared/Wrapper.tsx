@@ -16,9 +16,7 @@ export class ChallengeInfo {
 }
 
 const useStyle = makeStyles({
-	dailyChallengeWrapper: {
-		marginBlock: '2em',
-	},
+	dailyChallengeWrapper: {},
 });
 
 export const DailyChallengeWrapper = (props: { info: ChallengeInfo; children: ReactNode }) => {
