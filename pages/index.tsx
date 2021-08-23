@@ -1,8 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Container from '../src/components/based/Container';
-import { DailyChallengeWrapper, DailyInfo } from '../src/components/shared/Wrapper';
-import Day1 from '../src/views/payment/Day1';
+import { DailyChallengeWrapper, ChallengeInfo } from '../src/components/shared/Wrapper';
+import Challenge1 from '../src/views/payment/Challenge1';
+import Challenge2 from '../src/views/payment/Challenge2';
 
 const Home: NextPage = () => {
 	return (
@@ -13,18 +14,27 @@ const Home: NextPage = () => {
 				{/* <link rel="icon" href="/favicon.ico" /> */}
 			</Head>
 
-			<DailyChallengeWrapper info={day1}>
-				<Day1 />
+			<DailyChallengeWrapper info={challenge1}>
+				<Challenge1 />
+			</DailyChallengeWrapper>
+			<DailyChallengeWrapper info={challenge2}>
+				<Challenge2 />
 			</DailyChallengeWrapper>
 		</Container>
 	);
 };
 
-const day1 = new DailyInfo(
-	'day1',
-	'Day1',
+const challenge1 = new ChallengeInfo(
+	'challenge1',
+	'Challenge 1',
 	'Using percentages & avoiding heights',
 	'A look at why fixed unit sizes are a bad idea when it comes to creating layouts, and the times you might want to use them.'
+);
+const challenge2 = new ChallengeInfo(
+	'challenge2',
+	'Challenge 2',
+	'Enter max-width',
+	''
 );
 
 export default Home;

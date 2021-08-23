@@ -18,9 +18,13 @@ const useStyle = makeStyles({
 		color: 'white',
 
 		width: '80%',
+		maxWidth: '750px',
 		margin: '0 auto',
 
 		padding: '2em',
+		'& .intro-content': {
+			width: '50%',
+		},
 	},
 });
 

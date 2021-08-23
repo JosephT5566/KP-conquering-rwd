@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
-export class DailyInfo {
+export class ChallengeInfo {
 	id: string;
 	title: string;
 	subTitle: string;
@@ -16,12 +16,10 @@ export class DailyInfo {
 }
 
 const useStyle = makeStyles({
-	dailyChallengeWrapper: {
-		marginBlock: '2em',
-	},
+	dailyChallengeWrapper: {},
 });
 
-export const DailyChallengeWrapper = (props: { info: DailyInfo; children: ReactNode }) => {
+export const DailyChallengeWrapper = (props: { info: ChallengeInfo; children: ReactNode }) => {
 	const { info, children } = props;
 	const classes = useStyle();
 
