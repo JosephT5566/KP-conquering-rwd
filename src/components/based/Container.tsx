@@ -14,7 +14,7 @@ const useStyle = makeStyles((theme) => ({
 		backgroundColor: theme.palette.background.default,
 		display: 'flex',
 		flexDirection: 'column',
-		gap: '1rem',
+		gap: '2rem',
 		[theme.breakpoints.down('md')]: {
 			paddingInline: '5em',
 		},

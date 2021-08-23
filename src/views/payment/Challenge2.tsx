@@ -19,16 +19,26 @@ const useStyle = makeStyles({
 	},
 	fixedStyle: {
 		'& .container': {
-			width: '80%',
-			maxWidth: '750px',
-			margin: '0 auto',
+			width: '100%',
 			background: '#23424a',
 			color: 'white',
 			padding: '50px 0',
 		},
 
 		'& .intro-content': {
-			width: '50%',
+			width: '80%',
+			maxWidth: '750px',
+			margin: '0 auto',
+		},
+		'& > h2': {
+			width: '80%',
+			maxWidth: '750px',
+			marginInline: 'auto',
+		},
+		'& > p': {
+			width: '80%',
+			maxWidth: '750px',
+			marginInline: 'auto',
 		},
 	},
 });
