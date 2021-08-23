@@ -11,7 +11,7 @@ export default function SwitchButtons({ isFixed, setIsFixed }: Props) {
 	return (
 		<ButtonGroup style={{ marginBlock: '1em' }}>
 			<Button color={'primary'} variant={isFixed ? 'outlined' : 'contained'} onClick={() => setIsFixed(false)}>
-				{'Error'}
+				{'Not Good'}
 			</Button>
 			<Button color={'primary'} variant={isFixed ? 'contained' : 'outlined'} onClick={() => setIsFixed(true)}>
 				{'Fixed'}
