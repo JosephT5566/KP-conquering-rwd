@@ -4,6 +4,7 @@ import Container from '../src/components/based/Container';
 import { DailyChallengeWrapper, ChallengeInfo } from '../src/components/shared/Wrapper';
 import Challenge1 from '../src/views/payment/Challenge1';
 import Challenge2 from '../src/views/payment/Challenge2';
+import Challenge3 from '../src/views/payment/Challenge3';
 
 const Home: NextPage = () => {
 	return (
@@ -20,6 +21,9 @@ const Home: NextPage = () => {
 			<DailyChallengeWrapper info={challenge2}>
 				<Challenge2 />
 			</DailyChallengeWrapper>
+			<DailyChallengeWrapper info={challenge3}>
+				<Challenge3 />
+			</DailyChallengeWrapper>
 		</Container>
 	);
 };
@@ -35,6 +39,12 @@ const challenge2 = new ChallengeInfo(
 	'Challenge 2',
 	'Enter max-width',
 	''
+);
+const challenge3 = new ChallengeInfo(
+	'challenge3',
+	'Challenge 3',
+	'Try to clone this example',
+	<a href="https://www.figma.com/file/dGPcL6Ym2avOt4736aHb2B/conquer-responsive-layout-week-1-final-challenge?node-id=0%3A1">Figma</a>
 );
 
 export default Home;
