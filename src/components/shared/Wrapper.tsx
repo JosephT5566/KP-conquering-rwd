@@ -20,7 +20,7 @@ const useStyle = makeStyles({
 		'& a': {
 			color: '#136C72',
 			'&:hover': {
-				color: '#38CFD9',
+				opacity: '0.75',
 			},
 		},
 	},
